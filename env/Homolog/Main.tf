@@ -2,11 +2,11 @@ module "homolog" {
     source = "../../infra"
 
     nome_repositorio = "main"
-    cargoIAM = "homolog"
-    ambiante = "homolog"
+    cargoIAM = "main"
+    ambiante = "main"
     imagem="rgrandrade/ci_cd_testes_automatizados:main"
 }
 
 output "IP_alb" {
-  value = module.homolog.IP
+  value = module.main.IP
 }
