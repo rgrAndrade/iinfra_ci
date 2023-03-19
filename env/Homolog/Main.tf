@@ -2,8 +2,8 @@ module "homolog" {
     source = "../../infra"
 
     nome_repositorio = "main"
-    cargoIAM = "homolog"
-    ambiante = "homolog"
+    cargoIAM = "homologg"
+    ambiante = "homologg"
     imagem="rgrandrade/ci_cd_testes_automatizados:main"
 }
 
