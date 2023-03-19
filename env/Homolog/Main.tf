@@ -1,4 +1,4 @@
-module "main" {
+module "homolog" {
     source = "../../infra"
 
     nome_repositorio = "main"
@@ -8,5 +8,5 @@ module "main" {
 }
 
 output "IP_alb" {
-  value = module.main.IP
+  value = module.homolog.IP
 }

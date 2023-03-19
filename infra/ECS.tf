@@ -71,7 +71,7 @@ resource "aws_ecs_service" "Go-API" {
   desired_count   = 1
   load_balancer {
     target_group_arn = aws_lb_target_group.alvo.arn
-    container_name   = "homolog"
+    container_name   = "main"
     container_port   = 8000
   }
 
