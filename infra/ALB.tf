@@ -1,5 +1,5 @@
 resource "aws_lb" "alb" {
-  name               = "ECS-Go"
+  name               = "ECS-GO"
   security_groups    = [aws_security_group.alb.id]
   subnets            = module.vpc.public_subnets
 }
@@ -15,13 +15,13 @@ resource "aws_lb_listener" "http" {
 }
 
 resource "aws_lb_target_group" "alvo" {
-  name        = "ECS-Go"
+  name        = "ECS-GO"
   port        = 8000
   protocol    = "HTTP"
   target_type = "ip"
   vpc_id      = module.vpc.vpc_id
   health_check {
-    path = "/leo"
+    path = "/bruno"
   }
 }
 
